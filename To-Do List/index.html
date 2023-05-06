@@ -17,7 +17,21 @@
                 <p class="p-2">Add Task</p>
             </button>
         </form>
-        <ul id = "task-list" ></ul>
+        <div id="task-info" class="flex flex-row justify-center space-x-32 py-5 mr-32">
+            <p>
+                All Tasks: 
+                <span id="all-task">0</span>
+            </p>
+            <p  class="text-green-600">
+                Completed: 
+                <span id="complete">0</span> 
+            </p>
+            <p class="text-red-500">
+                Remaining: 
+                <span id="remaining">0</span>
+            </p>
+        </div>
+        <ul id = "task-list" class="list-disc"></ul>
     </div>
     <script src="script.js"></script>
 </body>
