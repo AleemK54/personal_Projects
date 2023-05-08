@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
 </head>
 <body>
     <div class="flex flex-col justify-center">
-        <p class="py-3 text-5xl text-center" >TO-DO LIST</p>
-        <p class="py-3 text-m text-center">Yesterday you said tomorrow.</p>
+        <p class="py-4 text-5xl text-center" >TO-DO LIST</p>
+        <p class="py-6 text-m text-center">Yesterday you said tomorrow.</p>
         <form class="flex justify-center">
             <input type="text" id="input-box" class="border border-slate-700 w-2/3 h-10 rounded mr-3 px-3">
-            <button id="add-button" class="bg-blue-300 hover:bg-blue-100 h-10 w-24 rounded text-white">
-                <p class="p-2">Add Task</p>
+            <button id="add-button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 
+            focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 text-center">
+                <p>Add Task</p>
             </button>
         </form>
         <div id="task-info" class="flex flex-row justify-center space-x-32 py-5 mr-32">
@@ -34,5 +36,6 @@
         <ul id = "task-list" class="list-disc"></ul>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 </body>
 </html>
